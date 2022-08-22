@@ -1,0 +1,831 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+body {
+  background-image: url("img/ukraine-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+body::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.329);
+}
+
+.container {
+  max-width: 1350px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #e6c63b;
+  margin-bottom: 30px;
+}
+
+section {
+  position: relative;
+  z-index: 3;
+  padding: 30px 0;
+}
+
+.hero {
+  min-height: 100vh;
+  background-image: url("img/ukraine-background.jpg");
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  position: relative;
+}
+
+.hero-inner {
+  width: 60%;
+  height: 100%;
+  margin-left: 150px;
+  position: relative;
+  z-index: 3;
+}
+
+.hero-title {
+  font-size: 76px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  font-size: 34px;
+  color: #E6C63B;
+}
+
+.putin-huilo-wrapper {
+  background-color: #E6C63B;
+  border-radius: 6px;
+  height: 400px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.date {
+  font-size: 56px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.features-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.features-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.features-item {
+  width: 25%;
+  text-align: center;
+  padding: 15px;
+}
+
+.features-num {
+  font-size: 68px;
+  color: #E6C63B;
+  font-weight: 700;
+}
+
+.features-description {
+  font-size: 18px;
+  color: #fff;
+}
+
+.brands-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.brands-row img {
+  width: 12%;
+  height: 100%;
+  padding: 0 15px;
+}
+
+.losses-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.losses-item {
+  width: 25%;
+  padding: 15px;
+  text-align: center;
+}
+
+.losses-num {
+  font-size: 68px;
+  color: #E6C63B;
+  font-weight: 700;
+}
+
+.losses-description {
+  font-size: 22px;
+  color: #fff;
+}
+
+.losses-container {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.losses-column {
+  padding: 5px;
+  text-align: center;
+}
+.losses-column:nth-child(1) {
+  border-right: 2px solid #fff;
+}
+.losses-column .title {
+  font-size: 48px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.losses-column .text {
+  font-size: 32px;
+  color: #fff;
+}
+
+.effects-inner {
+  text-align: center;
+}
+
+.gallery {
+  display: -ms-grid;
+  display: grid;
+  gap: 15px;
+  min-height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 25% 15px 25% 15px 25% 15px 25%;
+  grid-template-columns: repeat(4, 25%);
+  -ms-grid-rows: 20% 15px 20% 15px 20% 15px 20% 15px 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.gallery > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.gallery > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.gallery > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.gallery > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+
+.gallery > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.gallery > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.gallery > *:nth-child(7) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+
+.gallery > *:nth-child(8) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+}
+
+.gallery > *:nth-child(9) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+
+.gallery > *:nth-child(10) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+
+.gallery > *:nth-child(11) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+}
+
+.gallery > *:nth-child(12) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 7;
+}
+
+.gallery > *:nth-child(13) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+}
+
+.gallery > *:nth-child(14) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+}
+
+.gallery > *:nth-child(15) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 5;
+}
+
+.gallery > *:nth-child(16) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 7;
+}
+
+.gallery > *:nth-child(17) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+}
+
+.gallery > *:nth-child(18) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 3;
+}
+
+.gallery > *:nth-child(19) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 5;
+}
+
+.gallery > *:nth-child(20) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 7;
+}
+.gallery img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.victims {
+  font-size: 32px;
+  color: rgb(209, 15, 15);
+  padding: 10px 0;
+  font-weight: 500;
+  border-top: 2px solid rgb(209, 15, 15);
+  border-bottom: 2px solid rgb(209, 15, 15);
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.crimes-inner {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+}
+
+.crimes {
+  margin-bottom: 10px;
+  padding: 0 15px;
+}
+
+.crimes-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: rgb(209, 15, 15);
+  text-align: left;
+}
+
+.crimes-description {
+  text-align: left;
+  font-size: 22px;
+  color: #fff;
+}
+
+.crimes-info {
+  text-align: center;
+  font-size: 46px;
+  color: rgb(209, 15, 15);
+}
+
+.appeal {
+  margin-top: 30px;
+  background-color: #E6C63B;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 500px;
+  color: #fff;
+}
+.appeal .text {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1350px) {
+  .container {
+    max-width: 1000px;
+  }
+
+  .losses-column .title {
+    font-size: 32px;
+  }
+  .losses-column .text {
+    font-size: 26px;
+  }
+
+  .appeal {
+    padding: 0 20px;
+  }
+  .appeal .text {
+    font-size: 26px;
+  }
+}
+@media (max-width: 1080px) {
+  .container {
+    max-width: 900px;
+  }
+
+  .hero-inner {
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .gallery {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (300px)[8];
+    grid-template-rows: repeat(8, 300px);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 1200px;
+  }
+
+  .gallery > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .gallery > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+
+  .gallery > *:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .gallery > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+
+  .gallery > *:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .gallery > *:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+
+  .gallery > *:nth-child(7) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+
+  .gallery > *:nth-child(8) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+  }
+
+  .gallery > *:nth-child(9) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+
+  .gallery > *:nth-child(10) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+  }
+
+  .gallery > *:nth-child(11) {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+  }
+
+  .gallery > *:nth-child(12) {
+    -ms-grid-row: 6;
+    -ms-grid-column: 2;
+  }
+
+  .gallery > *:nth-child(13) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+  }
+
+  .gallery > *:nth-child(14) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 2;
+  }
+
+  .gallery > *:nth-child(15) {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+  }
+
+  .gallery > *:nth-child(16) {
+    -ms-grid-row: 8;
+    -ms-grid-column: 2;
+  }
+  .gallery img {
+    width: 100%;
+  }
+
+  .russian-crimes {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 980px) {
+  .container {
+    max-width: none;
+  }
+
+  section:nth-child(2) {
+    padding: 0;
+  }
+
+  section:last-child {
+    padding: 0;
+  }
+
+  .putin-huilo-wrapper {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .appeal {
+    border-radius: 0;
+  }
+
+  .section-title {
+    font-size: 38px;
+  }
+
+  .features-item {
+    width: 50%;
+  }
+
+  .brands-row img {
+    width: 25%;
+    padding: 20px;
+  }
+
+  .losses-item {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .losses-column .title {
+    font-size: 26px;
+  }
+  .losses-column .text {
+    font-size: 18px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-subtitle {
+    font-size: 22px;
+  }
+
+  .crimes-title {
+    font-size: 24px;
+  }
+
+  .crimes-description {
+    font-size: 16px;
+  }
+
+  .crimes-info {
+    font-size: 36px;
+  }
+}
+@media (max-width: 765px) {
+  .hero {
+    background-position-x: 70%;
+  }
+
+  .section-title {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 58px;
+  }
+
+  .hero-subtitle {
+    font-size: 28px;
+  }
+
+  .hero-inner {
+    padding: 15px 0;
+    background-color: rgba(35, 96, 175, 0.55);
+  }
+
+  .features-item {
+    width: 100%;
+    padding: 20px 30px;
+  }
+
+  .brands-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .losses-item {
+    width: 100%;
+  }
+
+  .losses-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-right: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .losses-column:nth-child(1) {
+    width: 70%;
+    border-right: none;
+    border-bottom: 2px solid #fff;
+  }
+  .losses-column .title {
+    font-size: 48px;
+  }
+  .losses-column .text {
+    font-size: 32px;
+  }
+
+  .gallery {
+    -ms-grid-columns: 0.7fr;
+    grid-template-columns: 0.7fr;
+    -ms-grid-rows: (250px)[16];
+    grid-template-rows: repeat(16, 250px);
+  }
+
+  .gallery > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .gallery > *:nth-child(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .gallery > *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .gallery > *:nth-child(4) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+
+  .gallery > *:nth-child(5) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+
+  .gallery > *:nth-child(6) {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+  }
+
+  .gallery > *:nth-child(7) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+  }
+
+  .gallery > *:nth-child(8) {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+  }
+
+  .gallery > *:nth-child(9) {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+  }
+
+  .gallery > *:nth-child(10) {
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
+  }
+
+  .gallery > *:nth-child(11) {
+    -ms-grid-row: 11;
+    -ms-grid-column: 1;
+  }
+
+  .gallery > *:nth-child(12) {
+    -ms-grid-row: 12;
+    -ms-grid-column: 1;
+  }
+
+  .gallery > *:nth-child(13) {
+    -ms-grid-row: 13;
+    -ms-grid-column: 1;
+  }
+
+  .gallery > *:nth-child(14) {
+    -ms-grid-row: 14;
+    -ms-grid-column: 1;
+  }
+
+  .gallery > *:nth-child(15) {
+    -ms-grid-row: 15;
+    -ms-grid-column: 1;
+  }
+
+  .gallery > *:nth-child(16) {
+    -ms-grid-row: 16;
+    -ms-grid-column: 1;
+  }
+  .gallery img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+@media (max-width: 582px) {
+  .hero-title {
+    font-size: 46px;
+  }
+
+  .date {
+    font-size: 52px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .losses-column {
+    width: 90%;
+  }
+  .losses-column:nth-child(1) {
+    width: 90%;
+  }
+  .losses-column .title {
+    font-size: 38px;
+  }
+  .losses-column .text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 467px) {
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .brands-row img {
+    width: 50%;
+  }
+
+  .appeal {
+    padding: 25px;
+  }
+  .appeal .text {
+    font-size: 22px;
+  }
+}
